@@ -26,7 +26,7 @@ export const siteConfig: SiteConfig = {
   bio: "聚焦产品设计与交互体验，通过研究、推演与原型验证，将复杂问题转化为清晰、可落地的设计方案。",
   bioEn: "A product designer focused on research-driven design processes, from user insight to prototype validation. Passionate about turning complexity into clarity through systematic thinking and careful execution.",
   url: "https://yaowei.design",
-  email: "hello@yaowei.design",
+  email: "13568871362@163.com",
   phone: "+86 13588136162",
   github: "https://github.com/yoaw6959-spec",
   position: "Product Designer",

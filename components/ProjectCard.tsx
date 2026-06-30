@@ -16,7 +16,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               decoding="async"
               src={project.images.cover.src}
               alt={project.images.cover.alt}
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             />
           </div>
           <div className="space-y-3">
