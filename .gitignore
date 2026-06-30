@@ -39,3 +39,9 @@ next-env.d.ts
 
 # screenshots
 screenshots/
+
+# test results
+test-results/
+
+# git backup
+.git_backup/
