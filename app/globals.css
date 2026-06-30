@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #F5F5F1;
+  --color-bg: #FAF9F6;
   --color-primary: #111111;
   --color-secondary: #666666;
   --color-tertiary: #999998;
@@ -18,7 +18,7 @@ body {
 }
 
 .section-container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
