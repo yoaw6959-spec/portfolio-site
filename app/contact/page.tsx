@@ -1,3 +1,4 @@
+﻿import { staticAsset } from "@/lib/paths";
 import { siteConfig } from "@/data/site";
 
 export default function ContactPage() {
@@ -22,14 +23,15 @@ export default function ContactPage() {
           </div>
           <div className="border border-line rounded-lg p-6 hover:border-primary transition-colors">
             <h3 className="text-xs font-mono tracking-wider text-tertiary uppercase mb-2">Portfolio</h3>
-            <a href="/files/portfolio.pdf" className="text-base text-primary hover:text-accent transition-colors">Download PDF</a>
+            <a href={staticAsset("/files/portfolio.pdf")} className="text-base text-primary hover:text-accent transition-colors">Download PDF</a>
           </div>
           <div className="border border-line rounded-lg p-6 hover:border-primary transition-colors">
             <h3 className="text-xs font-mono tracking-wider text-tertiary uppercase mb-2">Resume</h3>
-            <a href="/files/resume.pdf" className="text-base text-primary hover:text-accent transition-colors">Download Resume</a>
+            <a href={staticAsset("/files/resume.pdf")} className="text-base text-primary hover:text-accent transition-colors">Download Resume</a>
           </div>
         </div>
       </section>
     </>
   );
 }
+

@@ -1,3 +1,4 @@
+import { staticAsset } from "@/lib/paths";
 import { aboutData } from "@/data/about";
 
 export default function AboutPage() {
@@ -11,7 +12,7 @@ export default function AboutPage() {
       <section className="section-container pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="aspect-[3/4] max-w-sm bg-gray-200 rounded-lg overflow-hidden">
-            <img loading="lazy" decoding="async" src="/images/profile/photo.webp" alt={aboutData.name} className="w-full h-full object-cover" />
+            <img loading="lazy" decoding="async" src={staticAsset("/images/profile/photo.webp")} alt={aboutData.name} className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col justify-center">
             <p className="text-base leading-relaxed text-primary">{aboutData.bio}</p>

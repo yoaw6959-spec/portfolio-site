@@ -1,3 +1,5 @@
+﻿import { staticAsset } from "@/lib/paths";
+
 // ─── Types ───────────────────────────────────────────────────────────────
 
 export interface ProjectImage {
@@ -61,7 +63,7 @@ export interface Project {
 
 // ─── Image path helper ───────────────────────────────────────────────────
 
-const img = (project: string, name: string) => `/images/${project}/clean/${name}`;
+const img = (project: string, name: string) => staticAsset(`/images/${project}/clean/${name}`);
 
 // ─── Projects ────────────────────────────────────────────────────────────
 
@@ -181,3 +183,4 @@ export const projects: Project[] = [
     images: {"cover":{"src":"/images/other-works/clean/cover.jpg","alt":"Other works"},"hero":{"src":"/images/other-works/clean/hero.jpg","alt":"Other works hero"}},
   },
 ];
+

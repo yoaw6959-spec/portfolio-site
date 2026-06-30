@@ -1,3 +1,5 @@
+import { staticAsset } from "@/lib/paths";
+
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
@@ -19,8 +21,7 @@ export default function Home() {
         </p>
         <div className="mt-10 max-w-xl">
           <p className="text-xl md:text-2xl leading-snug font-medium text-primary">
-            赋形态以思考，予设计以实效。
-          </p>
+            璧嬪舰鎬佷互鎬濊€冿紝浜堣璁′互瀹炴晥銆?          </p>
           <p className="mt-4 text-sm text-secondary leading-relaxed">
             Shaping products through research, reasoning and execution.
           </p>
@@ -51,7 +52,7 @@ export default function Home() {
       <section className="section-container py-16 border-t border-line">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <div className="aspect-square max-w-xs bg-gray-200 rounded-lg overflow-hidden">
-            <img loading="lazy" decoding="async" src="/images/profile/photo.webp" alt={aboutData.name} className="w-full h-full object-cover" />
+            <img loading="lazy" decoding="async" src={staticAsset("/images/profile/photo.webp")} alt={aboutData.name} className="w-full h-full object-cover" />
           </div>
           <div>
             <h2 className="text-2xl font-medium text-primary">{aboutData.name}</h2>
@@ -66,3 +67,5 @@ export default function Home() {
     </>
   );
 }
+
+
